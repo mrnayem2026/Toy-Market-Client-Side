@@ -64,25 +64,28 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink
-                                to='/my_toys'
-                                className={({ isActive }) => (isActive ? 'active' : 'default')}
-                            >
-                                My Toys
-                            </NavLink>
+                            {
+                                user && <NavLink
+                                    to='/my_toys'
+                                    className={({ isActive }) => (isActive ? 'active' : 'default')}
+                                >
+                                    My Toys
+                                </NavLink>
+                            }
                         </li>
                         <li>
-                            <NavLink
-                                to='/add_a_toys'
-                                className={({ isActive }) => (isActive ? 'active' : 'default')}
-                            >
-                                Add A Toy
-                            </NavLink>
+                            {
+                                user && <NavLink
+                                    to='/add_a_toys'
+                                    className={({ isActive }) => (isActive ? 'active' : 'default')}
+                                >
+                                    Add A Toy
+                                </NavLink>
+                            }
                         </li>
                         <li>
                             {
                                 user ? <div className='flex gap-6'>
-                                    {/* <NavLink onClick={handleLogOut} className={({ isActive }) => (isActive ? 'active' : 'default')}>Loguot</NavLink> */}
                                     <NavLink onClick={handleLogOut} className="btn btn-outline btn-primary text-3xl font-BebasNeue px-10">Loguot</NavLink>
                                     <img src={user?.photoURL} alt="" className='h-14 rounded-full' data-tooltip-id="my-tooltip" data-tooltip-content={name} />
                                     <Tooltip id="my-tooltip" />
@@ -151,20 +154,14 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link
-                                                    to='/my_toys'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
-                                                >
-                                                    My Toys
-                                                </Link>
-                                            </li>
-                                            <li>
-                                                <Link
-                                                    to='/add_a_toys'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
-                                                >
-                                                    Add A Toy
-                                                </Link>
+                                                {
+                                                    user && <NavLink
+                                                        to='/add_a_toys'
+                                                        className={({ isActive }) => (isActive ? 'active' : 'default')}
+                                                    >
+                                                        Add A Toy
+                                                    </NavLink>
+                                                }
                                             </li>
                                             <li>
                                                 {
