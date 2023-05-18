@@ -61,6 +61,14 @@ const Header = () => {
                                 Add A Toy
                             </NavLink>
                         </li>
+                        <li>
+                            <Link
+                                to='/add_a_toys'
+                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
+                            >
+                                <button className="btn btn-outline btn-primary text-3xl font-BebasNeue px-10">Login</button>
+                            </Link>
+                        </li>
                     </ul>
                     {/* Nav Items Section for lerge device End*/}
 
@@ -81,7 +89,7 @@ const Header = () => {
                                     <div className='flex items-center justify-between mb-4'>
                                         <div>
                                             <Link to='/' className='inline-flex items-center'>
-                                            <h1 className='font-BebasNeue text-5xl text-black'>Action World</h1>
+                                                <h1 className='font-BebasNeue text-5xl text-black'>Action World</h1>
                                             </Link>
                                         </div>
                                         {/* Dropdown menu close button */}
@@ -116,7 +124,7 @@ const Header = () => {
                                                     to='/all_toys'
                                                     className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                                                 >
-                                                     All Toys
+                                                    All Toys
                                                 </Link>
                                             </li>
                                             <li>
@@ -133,6 +141,14 @@ const Header = () => {
                                                     className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                                                 >
                                                     Add A Toy
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link
+                                                    to='/add_a_toys'
+                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
+                                                >
+                                                    <button className="btn btn-outline btn-primary">Button</button>
                                                 </Link>
                                             </li>
                                         </ul>
