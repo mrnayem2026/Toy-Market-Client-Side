@@ -108,7 +108,7 @@ const Register = () => {
         <div className="mt-20 container mx-auto  flex gap-56" >
 
             {/* Register from strat */}
-            <div className="mt-24 bg-gray-100 h-2/4 p-10">
+            <div className="mt-24 bg-gray-100 h-2/4 p-10 rounded-tr-3xl rounded-bl-3xl">
                 <form onSubmit={handleSubmit} className="">
                     <div className="py-6">
                         <p className='text-red-500'>{error}</p>
