@@ -1,6 +1,9 @@
 import { Link, NavLink } from 'react-router-dom';
 import { Bars3BottomRightIcon, XMarkIcon, } from '@heroicons/react/24/solid'
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { Tooltip } from 'react-tooltip'
+import 'react-tooltip/dist/react-tooltip.css'
+import { AuthContext } from '../../../providers/AuthProviders/AuthProviders';
 
 
 
@@ -9,7 +12,22 @@ import { useState } from 'react';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
 
+    const { user, loading, logOut } = useContext(AuthContext);
 
+    const name = user?.displayName;
+
+    console.log(name);
+    if (loading) {
+        // return <div className='flex justify-center  mt-60'><img src={spinner} alt="" /></div>
+        return <div className='flex justify-center  mt-60'>Loding.........</div>
+    }
+
+    // logout function 
+    const handleLogOut = () => {
+        logOut()
+            .then(() => { })
+            .catch(error => console.error(error))
+    }
 
     return (
         <div className='top-0'>
@@ -62,12 +80,17 @@ const Header = () => {
                             </NavLink>
                         </li>
                         <li>
-                            <Link
-                                to='/login'
-                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
-                            >
-                                <button className="btn btn-outline btn-primary text-3xl font-BebasNeue px-10">Login</button>
-                            </Link>
+                            {
+                                user ? <div className='flex gap-6'>
+                                    {/* <NavLink onClick={handleLogOut} className={({ isActive }) => (isActive ? 'active' : 'default')}>Loguot</NavLink> */}
+                                    <NavLink onClick={handleLogOut} className="btn btn-outline btn-primary text-3xl font-BebasNeue px-10">Loguot</NavLink>
+                                    <img src={user?.photoURL} alt="" className='h-14 rounded-full' data-tooltip-id="my-tooltip" data-tooltip-content={name} />
+                                    <Tooltip id="my-tooltip" />
+                                </div> : <NavLink
+                                    to='/login'>
+                                    <button className="btn btn-outline btn-primary text-3xl font-BebasNeue px-10">Login</button>
+                                </NavLink>
+                            }
                         </li>
                     </ul>
                     {/* Nav Items Section for lerge device End*/}
@@ -144,12 +167,17 @@ const Header = () => {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link
-                                                    to='/add_a_toys'
-                                                    className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
-                                                >
-                                                    <button className="btn btn-outline btn-primary">Button</button>
-                                                </Link>
+                                                {
+                                                    user ? <div className='flex gap-6'>
+                                                        {/* <NavLink onClick={handleLogOut} className={({ isActive }) => (isActive ? 'active' : 'default')}>Loguot</NavLink> */}
+                                                        <NavLink onClick={handleLogOut} className="btn btn-outline btn-primary text-3xl font-BebasNeue px-10">Loguot</NavLink>
+                                                        <img src={user?.photoURL} alt="" className='h-14 rounded-full' data-tooltip-id="my-tooltip" data-tooltip-content={name} />
+                                                        <Tooltip id="my-tooltip" />
+                                                    </div> : <NavLink
+                                                        to='/login'>
+                                                        <button className="btn btn-outline btn-primary text-3xl font-BebasNeue px-10">Login</button>
+                                                    </NavLink>
+                                                }
                                             </li>
                                         </ul>
                                     </nav>
