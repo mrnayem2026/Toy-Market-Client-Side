@@ -170,15 +170,16 @@ const Login = () => {
 
                     {/* <button className="btn btn-outline btn-info rounded-xl w-2/4">Login</button> */}
                     <div className='flex flex-col justify-center items-center gap-2'>
-                        <button onClick={handleGoogleSignIn} className='btn hover:bg-zinc-800 hover:text-slate-50 bg-slate-50 text-black '><img src={google} alt="google icon" className='w-10 pr-2' />Singup with google</button>
-                        <button onClick={handleGitHubSignIn} className='btn hover:bg-blue-300 hover:text-black bg-slate-50 text-black '><img src={github} alt="github icon" className='w-10 pr-2' />Singup with github</button>
-                        <button className="btn hover:bg-zinc-800 hover:text-slate-50 bg-slate-50 text-black  rounded-xl w-2/4">Login</button>
+                        <button onClick={handleGoogleSignIn} className='btn hover:bg-zinc-800 hover:text-slate-50 bg-slate-50 text-black '><img src={google} alt="google icon" className='w-10 pr-2' />Sign in with google</button>
+                        <button onClick={handleGitHubSignIn} className='btn hover:bg-blue-300 hover:text-black bg-slate-50 text-black '><img src={github} alt="github icon" className='w-10 pr-2' />Sign in with github</button>
+                        <button className="btn btn-outline btn-primary text-3xl font-BebasNeue px-10">Sign in</button>
+                        {/* <button className="btn hover:bg-zinc-800 hover:text-slate-50 bg-slate-50 text-black  rounded-xl w-2/4">Login</button> */}
                     </div>
 
                     <p className="text-black">
                         Don&apos;t have an account?{" "}
                         <Link to="/register" state={location.state} className="link">
-                            Register here
+                            Sign up here
                         </Link>
                     </p>
                 </form>

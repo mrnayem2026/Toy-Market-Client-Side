@@ -217,13 +217,14 @@ const Register = () => {
 
                     {/* <button className="btn btn-outline btn-info rounded-xl w-2/4">Login</button> */}
                     <div className='flex flex-col justify-center items-center gap-2'>
-                        <button className="btn hover:bg-zinc-800 hover:text-slate-50 bg-slate-50 text-black  rounded-xl w-2/4">Register</button>
+                        <button className="btn btn-outline btn-primary text-3xl font-BebasNeue px-10">sign up</button>
+                        {/* <button className="btn hover:bg-zinc-800 hover:text-slate-50 bg-slate-50 text-black  rounded-xl w-2/4">Register</button> */}
                     </div>
 
                     <p className="text-black">
                         Have an account?{" "}
                         <Link to="/login" state={location.state} className="link">
-                            Login here
+                            Sign in here
                         </Link>
                     </p>
                 </form>
