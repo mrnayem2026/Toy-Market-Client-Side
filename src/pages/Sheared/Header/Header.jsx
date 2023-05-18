@@ -63,7 +63,7 @@ const Header = () => {
                         </li>
                         <li>
                             <Link
-                                to='/add_a_toys'
+                                to='/login'
                                 className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400'
                             >
                                 <button className="btn btn-outline btn-primary text-3xl font-BebasNeue px-10">Login</button>
