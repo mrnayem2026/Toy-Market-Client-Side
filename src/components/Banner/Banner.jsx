@@ -31,13 +31,13 @@ const Banner = () => {
 
     return (
 
-            <div className="h-screen lg:py-10 lg:pt-10">
+            <div className="h-screen pb-10">
                 <Carousel>
                     {/* 1ST BANNER  */}
                     <div style={containerStyle1} >
-                        <div className="container mx-auto text-center lg:pt-80">
-                            <h1 className="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-sky-500 to-sky-200 font-Montserrat">Unleashing the Power of Action Figure Toys  in an Epic Marvel Universe</h1>
-                            <p className="lg:py-6 lg:text-xl">
+                        <div className="container mx-auto text-center pt-40 lg:pt-80">
+                            <h1 className="font-extrabold text-transparent text-4xl lg:text-7xl bg-clip-text bg-gradient-to-r from-sky-500 to-sky-200 font-Montserrat">Unleashing the Power of Action Figure Toys  in an Epic Marvel Universe</h1>
+                            <p className="py-6  lg:text-xl">
                                 Embark on a thrilling journey with "Marvelous Adventures: Unleashing the Power of Action Figure Toys in an Epic Marvel Universe." <br /> Immerse yourself in the action-packed world of Marvel as your favorite superheroes.
                             </p>
 
@@ -46,9 +46,9 @@ const Banner = () => {
                     </div>
                     {/* 2nd BANNER  */}
                     <div style={containerStyle2} >
-                        <div className="container mx-auto text-center lg:pt-80">
-                            <h1 className="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-sky-500 to-sky-200 font-Montserrat">Action Figure Toys Conquer the Marvel Universe.</h1>
-                            <p className="lg:py-6 lg:text-xl">
+                        <div className="container mx-auto text-center pt-40 lg:pt-80">
+                            <h1 className="font-extrabold text-transparent text-4xl lg:text-7xl bg-clip-text bg-gradient-to-r from-sky-500 to-sky-200 font-Montserrat">Action Figure Toys Conquer the Marvel Universe.</h1>
+                            <p className="py-6 lg:text-xl">
                                 Embark on a thrilling journey with "Marvelous Adventures: Unleashing the Power of Action Figure Toys in an Epic Marvel Universe." <br /> Immerse yourself in the action-packed world of Marvel as your favorite superheroes.
                             </p>
 
@@ -57,9 +57,9 @@ const Banner = () => {
                     </div>
                     {/* 3rd BANNER  */}
                     <div style={containerStyle3} >
-                        <div className="container mx-auto text-center lg:pt-80">
-                            <h1 className="font-extrabold text-transparent text-7xl bg-clip-text bg-gradient-to-r from-sky-500 to-sky-200 font-Montserrat">Exploring the Boundless Potential of Action Figure Toys in an Epic Marvel Universe.</h1>
-                            <p className="lg:py-6 lg:text-xl">
+                        <div className="container mx-auto text-center pt-40 lg:pt-80">
+                            <h1 className="font-extrabold text-transparent text-4xl lg:text-7xl bg-clip-text bg-gradient-to-r from-sky-500 to-sky-200 font-Montserrat">Exploring the Boundless Potential of Action Figure Toys in an Epic Marvel Universe.</h1>
+                            <p className="py-6 lg:text-xl">
                                 Embark on a thrilling journey with "Marvelous Adventures: Unleashing the Power of Action Figure Toys in an Epic Marvel Universe." <br /> Immerse yourself in the action-packed world of Marvel as your favorite superheroes.
                             </p>
 
