@@ -32,7 +32,7 @@ const Blog = () => {
                                 <h3 className="font-bold text-3xl ">What is an access token and refresh token?<br /> How do they work and where should we store them on the client-side?</h3>
                                 <p className="py-4 uppercase text-xl">access token</p>
                                 <p className='text-sm'>
-                                    An access token is a tiny piece of code that contains a large amount of data. <br /> Information about the user, permissions, groups, and timeframes <br /> is embedded within one token that passes from a server to a user's device.
+                                    An access token is a tiny piece of code that contains a large amount of data. <br /> Information about the user, permissions, groups, and timeframes <br /> is embedded within one token that passes from a server to a users device.
                                 </p>
                                 <p className="py-4 uppercase text-xl">refresh token</p>
                                 <p className='text-sm'>
@@ -43,7 +43,7 @@ const Blog = () => {
                                 <p className="py-4 uppercase text-xl">When using access tokens and refresh tokens on the client-side.</p>
                                 <p className='text-sm'>
                                     <ul className='list-disc'>
-                                        <li>The client application initiates the authentication process by sending the user's credentials to the authentication server.</li>
+                                        <li>The client application initiates the authentication process by sending the users credentials to the authentication server.</li>
                                         <li>If the authentication is successful, the authentication server generates an access token and a refresh token. The access token is typically included in the response to the client, while the refresh token may be sent separately or stored securely on the server.</li>
                                         <li>The client includes the access token in the authorization header or as a parameter in each request made to the server to access protected resources. The server validates the access token, granting access to the requested resources if the token is valid and has not expired.</li>
                                     </ul>
