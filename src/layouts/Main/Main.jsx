@@ -1,8 +1,10 @@
+import Banner from "../../components/Banner/Banner";
+
 const Main = () => {
     return (
-        <div>
-            I am from  main
-        </div>
+        <>
+            <Banner></Banner>
+        </>
     );
 };
 
