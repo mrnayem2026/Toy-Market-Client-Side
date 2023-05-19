@@ -41,7 +41,7 @@ const OurToys = () => {
                 </div>
                 {/* card 2 end */}
 
-                {/* card 1  */}
+                {/* card 3  */}
                 <div className="card w-96 bg-base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] text-white">
                     <figure className="px-10 pt-10">
                         <img src={toys3} alt="Shoes" className="rounded-xl" />
@@ -54,9 +54,9 @@ const OurToys = () => {
                         </svg>
                     </div>
                 </div>
-                {/* card 1 end */}
+                {/* card 3 end */}
 
-                {/* card 1  */}
+                {/* card 4  */}
                 <div className="card w-96 bg-base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] text-white">
                     <figure className="px-10 pt-10">
                         <img src={toys4} alt="Shoes" className="rounded-xl" />
@@ -69,8 +69,9 @@ const OurToys = () => {
                         </svg>
                     </div>
                 </div>
-                {/* card 1 end */}
-                {/* card 1  */}
+                {/* card 4 end */}
+
+                {/* card 5  */}
                 <div className="card w-96 bg-base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] text-white">
                     <figure className="px-10 pt-10">
                         <img src={toys5} alt="Shoes" className="rounded-xl" />
@@ -83,8 +84,9 @@ const OurToys = () => {
                         </svg>
                     </div>
                 </div>
-                {/* card 1 end */}
-                {/* card 1  */}
+                {/* card 5 end */}
+
+                {/* card 6  */}
                 <div className="card w-96 bg-base-100 shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] text-white">
                     <figure className="px-10 pt-10">
                         <img src={toys6} alt="Shoes" className="rounded-xl" />
@@ -97,7 +99,7 @@ const OurToys = () => {
                         </svg>
                     </div>
                 </div>
-                {/* card 1 end */}
+                {/* card 6 end */}
             </div>
         </div>
     );
