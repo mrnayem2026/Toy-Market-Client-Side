@@ -16,7 +16,7 @@ const Header = () => {
 
     const name = user?.displayName;
 
-    console.log(name);
+    // console.log(name);
     if (loading) {
         // return <div className='flex justify-center  mt-60'><img src={spinner} alt="" /></div>
         return <div className='flex justify-center  mt-60'>Loding.........</div>
