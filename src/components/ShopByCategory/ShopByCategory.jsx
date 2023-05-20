@@ -37,12 +37,24 @@ const ShopByCategory = () => {
                     <TabPanel value="1">
                         <div className="flex gap-7">
                             {
-                                products.slice(0,2).map((product)=> <ShopByCategoryCard key={product.id} product={product}></ShopByCategoryCard>)
+                                products.slice(0, 2).map((product) => <ShopByCategoryCard key={product.id} product={product}></ShopByCategoryCard>)
                             }
                         </div>
                     </TabPanel>
-                    <TabPanel value="2">Item Two 2</TabPanel>
-                    <TabPanel value="3">Item Three 3</TabPanel>
+                    <TabPanel value="2">
+                        <div className="flex gap-7">
+                            {
+                                products.slice(2, 4).map((product) => <ShopByCategoryCard key={product.id} product={product}></ShopByCategoryCard>)
+                            }
+                        </div>
+                    </TabPanel>
+                    <TabPanel value="3">
+                        <div className="flex gap-7">
+                            {
+                                products.slice(4, 6).map((product) => <ShopByCategoryCard key={product.id} product={product}></ShopByCategoryCard>)
+                            }
+                        </div>
+                    </TabPanel>
                 </TabContext>
             </Box>
         </div>
